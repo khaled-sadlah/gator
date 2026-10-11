@@ -27,20 +27,28 @@ Install dependencies:
 
 ```bash
 npm install
+```
 
 Create the database:
 
+```bash
 sudo -u postgres createdb gator
+```
 
 Set the environment variable:
 
+```bash
 export DB_URL="postgres://postgres:postgres@localhost:5432/gator?sslmode=disable"
+```
 
 Run migrations:
 
+```bash
 npx drizzle-kit generate
 npx drizzle-kit migrate
-Configuration
+```
+
+## Configuration
 
 Create a config file in your home directory:
 
@@ -54,9 +62,13 @@ Add the following:
 
 Save and exit.
 
-Running the CLI
+## Running the CLI
+
+```bash
 npm run start <command>
-Available Commands
+```
+
+## Available Commands
 
 Register a user:
 
@@ -93,7 +105,7 @@ npm run start browse
 Browse with limit:
 
 npm run start browse 10
-Database Tables
+## Database Tables
 
 users
 
@@ -105,7 +117,7 @@ posts
 
 Posts are stored with unique URLs to prevent duplication.
 
-License
+## Project context
 
 This project is for educational purposes.
 
