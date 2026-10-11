@@ -1,0 +1,5 @@
+
+# Keep generated reports and dependencies out of GitHub language statistics.
+reports/** linguist-generated=true
+node_modules/** linguist-vendored=true
+dist/** linguist-generated=true
